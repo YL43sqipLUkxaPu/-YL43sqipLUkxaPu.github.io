@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Asap+Condensed&display=swap');
+
+body {
+    background-color:darkblue;
+    user-select: none
+}
+
+h1 {
+    color:white;
+}
+
+body * {
+   font-family: 'Asap Condensed', sans-serif;
+    font-weight:bold;
+}
+
+#logo {
+    position:relative;
+    top:10px;
+    margin-right:10px;
+}
+
+#nav_bar button {
+    transition:box-shadow 1s;
+    cursor:pointer;
+    margin-bottom:10px;
+    border:1px solid black;
+    color:white;
+    background-color:black;
+    display:inline-block;
+    padding:20px;
+}
+
+#nav_bar button:hover {
+    box-shadow: 3px 3px 7px gray;
+}
+
+#game {
+    position:absolute;
+    text-align:center;
+    width:850px;
+    height:700px;
+    border:3px solid black;
+    background-image:url(https://d33wubrfki0l68.cloudfront.net/c74c35b2a95404811b10e6c49ae26816a3a60712/7292d/bf53663c1cd5c3e03cf4a29bce51856e/flappy-bird.gif);
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+#info {
+    position: relative;
+    right:-340px;
+    height:200px;
+}
+
+.info-text {
+    position:relative;
+    top:-175px;
+    margin-bottom:70px;
+}
+
+#bird{
+    position:absolute;
+    left:150px;
+    width:90px;
+    height:90px;
+    background-image:url(bird.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.pipe {
+    background-image:url(https://i.ya-webdesign.com/images/transparent-pipes-flappy-bird-4.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-color:green;
+    width:100px;
+    position:absolute;
+    left:850px;
+}
+
+.pipe1 {
+    transform:rotateX(180deg);
+}
+
+.pipe2 {
+    position:absolute;
+    top:400px;
+}
+
+#gameover {
+  position: absolute;
+  left:30%;
+  top:30%;
+  display:none;
+  width:325px;
+  height:200px;
+  background-color:green;
+  border:4px solid black;
+}
+
+#gameover * {
+  position:relative;
+  top:20px;
+}
+
+#gameover button {
+    cursor: pointer;
+    border:none;
+    transition:width 0.5s;
+    background-color:blue;
+    width:40%;
+    padding:6px;
+    color:white;
+    height:40%;
+}
+
+#gameover button:hover {
+   width:45%; 
+}
